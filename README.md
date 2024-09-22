@@ -29,6 +29,7 @@ scikit-learn for building machine learning models
 
 # Future Improvements
 Implement a deep learning model using neural networks to further enhance the accuracy.
+Add a web interface for non-technical users to interact with the prediction model.
 Use additional features such as cholesterol levels and physical activity for better predictions.
 
 
