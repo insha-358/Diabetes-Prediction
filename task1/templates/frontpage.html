@@ -1,0 +1,84 @@
+ {% load static %} <!--load the static file-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DIABETES PREDICTION</title>
+    <STYLE>
+        *{
+            margin: 0;
+            color: beige;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Lucida Sans", "Noto Sans", sans-serif;
+        }
+       BODY{
+           background-color: #1e1d1d;
+       }
+       .BACKGROUND{
+           display: flex;
+
+       }
+       .IMAGE{
+           height: 650PX;
+           width:750px;
+           background-image:url("{% static 'D:\python\task1\task1\static\task1\images\diabates_ai_image.jpg' %}") ;
+           background-size: contain;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+
+       }
+      .INTRO{
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+      }
+      input[type=submit] {
+          background-color: #ed6c60;
+          border-radius: 10px;
+          border: 2px;
+          color: beige;
+          font-weight: bold;
+          padding: 16px 32px;
+          cursor: pointer;
+          margin-top: 15px;
+          align-items: center;
+      }
+      input[type=submit]:hover {
+          background-color: #dd311f;
+          border-radius: 10px;
+          border: 2px solid beige;
+          color: beige;
+          font-weight: bold;
+          padding: 16px 32px;
+          cursor: pointer;
+          margin-top: 15px;
+          align-items: center;
+      }
+
+      h1{
+          margin: 20px;
+      }
+      .startbutton{
+          margin-top: 50px;
+          display: flex;
+          justify-content: center;
+      }
+    </STYLE>
+</head>
+<body>
+<DIV CLASS=BACKGROUND>
+    <DIV CLASS="IMAGE"></DIV>
+    <DIV class="INTRO">
+        <div>
+            <div>
+        <H1>WELCOME TO</H1>
+        <H1>DIABETES PREDICTION</H1></div>
+            <div class="startbutton">
+        <FORM ACTION="predict">
+            <INPUT TYPE="SUBMIT" VALUE="START">
+        </FORM></div>
+        </div>
+    </DIV>
+</DIV>
+</body>
+</html>

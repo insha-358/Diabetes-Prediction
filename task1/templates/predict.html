@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PREDICTION</title>
+    <style>
+        *{
+            margin:0;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Lucida Sans", "Noto Sans", sans-serif ;
+            color: beige;
+        }
+        body{
+            background-color: #1e1d1d;
+        }
+       .main{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+       }
+       .image{
+           height: 650PX;
+           width:650px;
+           background-image: url("{% static 'D:\python\task1\task1\static\task1\images\diabetes_ai_image_predict.jpg' %}");
+           background-color: #1e1d1d;
+           background-repeat: no-repeat;
+           background-size:contain ;
+       }
+       .details{
+          height: 650PX;
+           width:750px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+       }
+       h1{
+           padding: 20px;
+       }
+
+       input[type="text"]{
+        border-radius: 20px;
+           height: 20px;
+           width: 100px;
+           color: #dd311f;
+       }
+       input[type=submit] {
+          background-color: #ed6c60;
+          border-radius: 10px;
+          border: 2px;
+          color: beige;
+          font-weight: bold;
+          padding: 16px 32px;
+          cursor: pointer;
+          margin-top: 15px;
+          align-items: center;
+      }
+       input[type=submit]:hover {
+          background-color: #dd311f;
+          border-radius: 10px;
+          border: 2px solid beige;
+          color: beige;
+          font-weight: bold;
+          padding: 16px 32px;
+          cursor: pointer;
+          margin-top: 15px;
+          align-items: center;
+      }
+       .result{
+           text-align: center;
+           height: 50px;
+           width: 50px;
+           font-weight: bold;
+       }
+    </style>
+
+</head>
+<body>
+<div class="main">
+
+<div class="details">
+    <h1>PLEASE ENTER THE DETAILS:</h1>
+    <form action = "result">
+        <table>
+            <tr >
+                <td align ="right">Pregnancies:</td>
+                <td align = "left">
+                    <input type = "text" name = "n1" >
+                </td>
+            </tr>
+            <tr>
+                <td align ="right">Glucose:</td>
+                <td align = "left">
+                    <input type = "text" name = "n2" required>
+                </td>
+            </tr>
+            <tr>
+                <td align ="right">Blood Pressure:</td>
+                <td align = "left">
+                    <input type = "text" name = "n3" required>
+                </td>
+            </tr>
+            <tr>
+                <td align ="right">Skin Thickness:</td>
+                <td align = "left">
+                    <input type = "text" name = "n4" required>
+                </td>
+            </tr>
+             <tr>
+                <td align ="right">Insulin:</td>
+                <td align = "left">
+                    <input type = "text" name = "n5" required>
+                </td>
+
+             <tr>
+                <td align ="right">BMI:</td>
+                <td align = "left">
+                    <input type = "text" name = "n6" required>
+                </td>
+            </tr>
+              <tr>
+                <td align ="right">Diabetes pedigree function:</td>
+                <td align = "left">
+                    <input type = "text" name = "n7" required>
+                </td>
+            </tr>
+              <tr>
+                <td align ="right">Age:</td>
+                <td align = "left">
+                    <input type = "text" name = "n8" required>
+                </td>
+            </tr>
+        </table>
+        <input type="submit">
+    </form>
+    <div class="result">Result<br><br>{{result2}}</div>
+
+    </div>
+    <div class="image"></div>
+</div>
+</body>
+</html>
